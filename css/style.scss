@@ -3,8 +3,48 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: 'Work Sans', sans-serif;;
+    font-family: 'Work Sans', sans-serif;
 }
+header{
+    height: 10vh;
+    width: 100%;
+    background-color: #040A10;
+    color: #fcfcfc;
+}
+#start{
+    height: 90vh;
+    width: 100%;
+    background-color: #000;
+    background-repeat: no-repeat; 
+    align-items: center;
+    //justify-content: center;
+    display: flex;
+    
+    div{
+        width: 50%;
+        color: white;
+        font-family: 'Work Sans', sans-serif;
+        margin-left: 15%;
+
+        h2{
+            font-family: 'Lato', sans-serif;
+            font-weight: 600;
+            font-size: 30px;
+        }
+        p{
+            margin-top: 25px;
+            font-weight: 300;
+            line-height: 23px;
+            //text-align: justify;
+            font-size: 18px;
+        }
+    }
+}
+
+
+
+
+
     #vant{
 
         hr{
@@ -79,4 +119,39 @@
         }
     }
 
+    #fraz{
+        background-color: #455D79BA;
+        background-image: url(../img/Rectangle\ 3.png);
+        height: 230px;
+        width: 100%;
+       
+       
+        .div{
+            
+            align-items: center;
+            justify-content: center;
+            display: grid;
+            justify-items: center;
+
+
+            img{
+                margin-top: 50px;
+            }
+            h4{
+                margin: 20px;
+                font-weight: 600;
+                width: 55%;
+                font-family: 'Work Sans';
+                font-size: 20px;
+                line-height: 23px;
+            }
+            p{
+                margin-top: 15px;
+                font-family: 'Work Sans';
+                font-weight: 500;
+                font-size: 20px;
+                color: #0F355C;
+            }
+        }
+    }
     

@@ -6,6 +6,39 @@
   font-family: "Work Sans", sans-serif;
 }
 
+header {
+  height: 10vh;
+  width: 100%;
+  background-color: #040A10;
+  color: #fcfcfc;
+}
+
+#start {
+  height: 90vh;
+  width: 100%;
+  background-color: #000;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+}
+#start div {
+  width: 50%;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  margin-left: 15%;
+}
+#start div h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+#start div p {
+  margin-top: 25px;
+  font-weight: 300;
+  line-height: 23px;
+  font-size: 18px;
+}
+
 #vant {
   height: 110vh;
   width: 100%;
@@ -65,4 +98,35 @@
   margin-left: 10%;
   margin-top: 19%;
   display: flex;
+}
+
+#fraz {
+  background-color: rgba(69, 93, 121, 0.7294117647);
+  background-image: url(../img/Rectangle\ 3.png);
+  height: 230px;
+  width: 100%;
+}
+#fraz .div {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  justify-items: center;
+}
+#fraz .div img {
+  margin-top: 50px;
+}
+#fraz .div h4 {
+  margin: 20px;
+  font-weight: 600;
+  width: 55%;
+  font-family: "Work Sans";
+  font-size: 20px;
+  line-height: 23px;
+}
+#fraz .div p {
+  margin-top: 15px;
+  font-family: "Work Sans";
+  font-weight: 500;
+  font-size: 20px;
+  color: #0F355C;
 }/*# sourceMappingURL=style.css.map */
