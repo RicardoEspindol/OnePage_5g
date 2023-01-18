@@ -1,6 +1,68 @@
 * {
   padding: 0;
   margin: 0;
+  border: 0;
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
+}
+
+#vant {
+  height: 110vh;
+  width: 100%;
+  background-color: #fcfcfc;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#vant hr {
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+#vant div {
+  width: 30%;
+  height: 85%;
+}
+#vant div h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+}
+#vant div h4 {
+  font-family: "Lato", sans-serif;
+  color: #0F355C;
+  font-weight: 700;
+  font-size: 18px;
+}
+#vant div p {
+  text-align: justify;
+  font-weight: 500;
+}
+#vant .icons {
+  display: block;
+  height: 80%;
+}
+#vant .icons .ic {
+  border: 1px solid #000;
+  display: flex;
+  height: 120px;
+  width: 120px;
+  background-color: #0F355C;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+#vant .icons #cro {
+  margin-left: 28%;
+  margin-top: 20%;
+  display: flex;
+}
+#vant .icons #wif {
+  margin-left: 80%;
+  margin-top: 12%;
+  display: flex;
+}
+#vant .icons #bat {
+  margin-left: 10%;
+  margin-top: 19%;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
