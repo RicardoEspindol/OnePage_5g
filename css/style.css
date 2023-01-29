@@ -119,6 +119,9 @@ header #search-block #search-background #search-text {
   display: flex;
 }
 #vant hr {
+  background-color: #0F355C;
+  width: 50px;
+  height: 4px;
   border-radius: 2px;
   margin-bottom: 10px;
 }
@@ -202,41 +205,49 @@ header #search-block #search-background #search-text {
   color: #0F355C;
 }
 
-#security article {
-  padding: 10vh 0;
-  width: 80vw;
-  height: 70vh;
-  margin: auto;
+#security {
   display: flex;
   flex-direction: column;
-  gap: 5vh;
 }
-#security article .section-tittle {
-  padding-left: 4vw;
+#security .section-tittle {
+  padding-top: 10vh;
+  padding-left: 15vw;
   display: flex;
   flex-direction: column;
   gap: 0.5vw;
 }
-#security article .section-tittle h2 {
+#security .section-tittle hr {
+  background-color: #0F355C;
+  width: 50px;
+  height: 4px;
+  border-radius: 2px;
+}
+#security .section-tittle h2 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
 }
-#security article #content {
+#security .article {
+  padding: 10vh 0;
+  width: 80vw;
+  height: 70vh;
+  margin: auto;
+}
+#security .article #content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 5vw;
 }
-#security article #content .content-block {
+#security .article #content .content-block {
   display: flex;
   flex-direction: column;
   gap: 2vh;
   text-align: center;
 }
-#security article #content .content-block h3 {
+#security .article #content .content-block h3 {
   color: #0F355C;
   font-family: "Lato";
   font-style: normal;
@@ -244,7 +255,7 @@ header #search-block #search-background #search-text {
   font-size: 22px;
   line-height: 26px;
 }
-#security article #content .content-block p {
+#security .article #content .content-block p {
   width: 20vw;
   text-align: justify;
   font-family: "Work Sans";
@@ -258,31 +269,37 @@ header #search-block #search-background #search-text {
   background-color: rgba(69, 93, 121, 0.7294117647);
   height: 80vh;
   padding-top: 10vh;
-}
-#conclusion article {
-  width: 70vw;
   display: flex;
   flex-direction: column;
-  gap: 5vh;
-  margin: auto;
-  text-align: center;
 }
-#conclusion article .section-tittle {
+#conclusion .section-tittle {
   display: flex;
   flex-direction: column;
-  gap: 1vh;
+  align-items: center;
 }
-#conclusion article .section-tittle hr {
+#conclusion .section-tittle hr {
+  background-color: #0F355C;
+  width: 50px;
+  height: 4px;
+  border-radius: 2px;
   margin: auto;
 }
-#conclusion article .section-tittle h2 {
+#conclusion .section-tittle h2 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
 }
-#conclusion article p {
+#conclusion .article {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  margin: 10vh auto auto auto;
+  text-align: center;
+}
+#conclusion .article p {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
@@ -308,6 +325,12 @@ footer #social-area {
   justify-content: center;
   gap: 40px;
   align-items: center;
+}
+footer #social-area hr {
+  background-color: #fff;
+  width: 25%;
+  height: 3px;
+  border-radius: 2px;
 }
 footer #social-area .footer-icon {
   width: 90px;
@@ -360,17 +383,18 @@ footer #footer-last-div #useful-links a:hover {
   #fraz .div h4 {
     width: 88vw;
   }
-  #security article {
+  #security .article {
     height: 100vh;
   }
-  #security article #content {
+  #security .article #content {
     flex-direction: column;
   }
-  #security article #content .content-block p {
+  #security .article #content .content-block p {
     width: 80vw;
   }
   #conclusion {
-    height: 130vh;
+    height: 130%;
+    padding-bottom: 5vh;
   }
   footer #footer-last-div #useful-links {
     max-width: 97vw;

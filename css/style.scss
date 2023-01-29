@@ -128,6 +128,9 @@ header{
 #vant{
 
     hr{
+        background-color: #0F355C;
+        width: 50px;
+        height: 4px;
         border-radius: 2px;
         margin-bottom: 10px;
     }
@@ -236,31 +239,37 @@ header{
 }
 
 #security{
+    display: flex;
+    flex-direction: column;
 
-    article{
+    .section-tittle{
+        padding-top: 10vh;
+        padding-left: 15vw;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5vw;
+
+        hr{
+            background-color: #0F355C;
+            width: 50px;
+            height: 4px;
+            border-radius: 2px;
+        }
+
+        h2{
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
+    .article{
         padding: 10vh 0;
         width: 80vw;
         height: 70vh;
         margin: auto;
-
-        display: flex;
-        flex-direction: column;
-        gap: 5vh;
-
-        .section-tittle{
-            padding-left: 4vw;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5vw;
-
-            h2{
-                font-family: 'Lato';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 29px;
-            }
-        }
 
         #content{
             display: flex;
@@ -302,32 +311,39 @@ header{
     background-color: #455D79BA;
     height: 80vh;
     padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    
+    .section-tittle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    article{
+        hr{
+            background-color: #0F355C;
+            width: 50px;
+            height: 4px;
+            border-radius: 2px;
+            margin: auto;
+        }
+
+        h2{
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+    
+    .article{
         width: 70vw;
         display: flex;
         flex-direction: column;
         gap: 5vh;
-        margin: auto;
+        margin: 10vh auto auto auto;
         text-align: center;
 
-        .section-tittle{
-            display: flex;
-            flex-direction: column;
-            gap: 1vh;
-
-            hr{
-                margin: auto;
-            }
-
-            h2{
-                font-family: 'Lato';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 29px;
-            }
-        }
 
         p{
             font-family: 'Work Sans';
@@ -357,6 +373,13 @@ footer{
         justify-content: center;
         gap: 40px;
         align-items: center;
+
+        hr{
+            background-color: #fff;
+            width: 25%;
+            height: 3px;
+            border-radius: 2px;
+        }
 
         .footer-icon{
             width: 90px;
@@ -422,20 +445,21 @@ footer{
         width: 88vw;
     }
 
-    #security article{
+    #security .article{
         height: 100vh;
     }
 
-    #security article #content{
+    #security .article #content{
         flex-direction: column;
     }
 
-    #security article #content .content-block p {
+    #security .article #content .content-block p {
         width: 80vw;
     }
 
     #conclusion{
-        height: 130vh;
+        height: 130%;
+        padding-bottom: 5vh;
     }
 
     footer #footer-last-div #useful-links {
