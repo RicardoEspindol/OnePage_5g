@@ -11,7 +11,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   height: 10vh;
-  width: 98.9vw;
   background-color: #040A10;
   color: #fcfcfc;
   align-items: center;
@@ -23,19 +22,48 @@ header #menu-block {
   padding: 0px 0px 0px 10vw;
 }
 header #menu-block #burguer {
-  width: 30px;
-  height: 30px;
-  line-height: 24px;
-}
-header #menu-block #menu-text {
   width: 54px;
   height: 18px;
+  background-color: transparent;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  line-height: 24px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 300;
-  font-size: 1.1rem;
-  line-height: 24px;
-  color: #FFFFFF;
+  margin-top: -3px;
+  border: none;
+}
+header #menu-block .dropdown {
+  position: relative;
+  display: inline-block;
+}
+header #menu-block #dropdown-content {
+  margin-left: -10px;
+  display: none;
+  position: absolute;
+  background-color: #040A10;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+header #menu-block #dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+header #menu-block #dropdown-content a:hover {
+  background-color: rgba(241, 241, 241, 0.1019607843);
+}
+header #menu-block .dropdown:hover #dropdown-content {
+  display: block;
+}
+header #menu-block #menu-text:hover {
+  display: block;
+}
+header #menu-block #menu-text:hover .dropbtn {
+  background-color: #fff;
 }
 header #menu-block #dotted-line {
   width: 30px;
@@ -52,6 +80,10 @@ header #menu-block #logo-text {
   font-size: 1.2rem;
   line-height: 24px;
   color: #FFFFFF;
+}
+header #menu-block #logo-text img {
+  width: 60px;
+  margin-top: -30%;
 }
 header #search-block {
   padding-right: 10vw;
@@ -86,14 +118,14 @@ header #search-block #search-background #search-text {
 
 #start {
   height: 90vh;
-  width: 98.9vw;
+  width: 100%;
   background-color: #000;
   background-repeat: no-repeat;
   align-items: center;
   display: flex;
 }
 #start div {
-  width: 50vw;
+  width: 50%;
   color: white;
   font-family: "Work Sans", sans-serif;
   margin-left: 15%;
@@ -112,22 +144,19 @@ header #search-block #search-background #search-text {
 
 #vant {
   height: 110vh;
-  width: 98.9vw;
+  width: 100%;
   background-color: #fcfcfc;
   align-items: center;
   justify-content: center;
   display: flex;
 }
 #vant hr {
-  background-color: #0F355C;
-  width: 50px;
-  height: 4px;
   border-radius: 2px;
   margin-bottom: 10px;
 }
 #vant div {
-  width: 30vw;
-  height: 85vh;
+  width: 30%;
+  height: 85%;
 }
 #vant div h3 {
   font-family: "Lato", sans-serif;
@@ -178,7 +207,7 @@ header #search-block #search-background #search-text {
   background-color: rgba(69, 93, 121, 0.7294117647);
   background-image: url(../img/Rectangle\ 3.png);
   height: 230px;
-  width: 98.9vw;
+  width: 100%;
 }
 #fraz .div {
   align-items: center;
@@ -205,49 +234,41 @@ header #search-block #search-background #search-text {
   color: #0F355C;
 }
 
-#security {
+#security article {
+  padding: 10vh 0;
+  width: 80vw;
+  height: 70vh;
+  margin: auto;
   display: flex;
   flex-direction: column;
+  gap: 5vh;
 }
-#security .section-tittle {
-  padding-top: 10vh;
-  padding-left: 15vw;
+#security article .section-tittle {
+  padding-left: 4vw;
   display: flex;
   flex-direction: column;
   gap: 0.5vw;
 }
-#security .section-tittle hr {
-  background-color: #0F355C;
-  width: 50px;
-  height: 4px;
-  border-radius: 2px;
-}
-#security .section-tittle h2 {
+#security article .section-tittle h2 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
 }
-#security .article {
-  padding: 10vh 0;
-  width: 80vw;
-  height: 70vh;
-  margin: auto;
-}
-#security .article #content {
+#security article #content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 5vw;
 }
-#security .article #content .content-block {
+#security article #content .content-block {
   display: flex;
   flex-direction: column;
   gap: 2vh;
   text-align: center;
 }
-#security .article #content .content-block h3 {
+#security article #content .content-block h3 {
   color: #0F355C;
   font-family: "Lato";
   font-style: normal;
@@ -255,7 +276,7 @@ header #search-block #search-background #search-text {
   font-size: 22px;
   line-height: 26px;
 }
-#security .article #content .content-block p {
+#security article #content .content-block p {
   width: 20vw;
   text-align: justify;
   font-family: "Work Sans";
@@ -269,37 +290,31 @@ header #search-block #search-background #search-text {
   background-color: rgba(69, 93, 121, 0.7294117647);
   height: 80vh;
   padding-top: 10vh;
+}
+#conclusion article {
+  width: 70vw;
   display: flex;
   flex-direction: column;
+  gap: 5vh;
+  margin: auto;
+  text-align: center;
 }
-#conclusion .section-tittle {
+#conclusion article .section-tittle {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 1vh;
 }
-#conclusion .section-tittle hr {
-  background-color: #0F355C;
-  width: 50px;
-  height: 4px;
-  border-radius: 2px;
+#conclusion article .section-tittle hr {
   margin: auto;
 }
-#conclusion .section-tittle h2 {
+#conclusion article .section-tittle h2 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
 }
-#conclusion .article {
-  width: 70vw;
-  display: flex;
-  flex-direction: column;
-  gap: 5vh;
-  margin: 10vh auto auto auto;
-  text-align: center;
-}
-#conclusion .article p {
+#conclusion article p {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
@@ -319,18 +334,12 @@ footer {
   text-align: center;
 }
 footer #social-area {
-  width: 98.9vw;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 40px;
   align-items: center;
-}
-footer #social-area hr {
-  background-color: #fff;
-  width: 25%;
-  height: 3px;
-  border-radius: 2px;
 }
 footer #social-area .footer-icon {
   width: 90px;
@@ -346,6 +355,9 @@ footer #footer-last-div h2 {
   font-size: 1.2rem;
   line-height: 35px;
   color: #FFFFFF;
+}
+footer #footer-last-div img {
+  width: 80px;
 }
 footer #footer-last-div #useful-links {
   max-width: 20vw;
@@ -367,36 +379,4 @@ footer #footer-last-div #useful-links a {
 }
 footer #footer-last-div #useful-links a:hover {
   text-decoration: underline;
-}
-
-@media (max-width: 1200px) {
-  #vant .icons {
-    display: none;
-  }
-  #vant div {
-    width: 75vw;
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  #fraz .div h4 {
-    width: 88vw;
-  }
-  #security .article {
-    height: 100vh;
-  }
-  #security .article #content {
-    flex-direction: column;
-  }
-  #security .article #content .content-block p {
-    width: 80vw;
-  }
-  #conclusion {
-    height: 130%;
-    padding-bottom: 5vh;
-  }
-  footer #footer-last-div #useful-links {
-    max-width: 97vw;
-  }
 }/*# sourceMappingURL=style.css.map */
